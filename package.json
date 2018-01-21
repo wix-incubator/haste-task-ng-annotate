@@ -1,0 +1,21 @@
+{
+  "name": "haste-task-ng-annotate",
+  "version": "0.0.1",
+  "main": "./src/index.js",
+  "author": "Vytautas Jakutis <jakutis@wix.com>",
+  "scripts": {
+    "test": "jest test"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "globby": "^7.1.1",
+    "ng-annotate": "^1.2.2"
+  },
+  "devDependencies": {
+    "haste-test-utils": "^0.2.5",
+    "jest": "^22.1.4"
+  }
+}
