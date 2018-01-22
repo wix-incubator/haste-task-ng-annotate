@@ -12,7 +12,7 @@ module.exports = async (options) => {
     const sourceCode = await readFile(path);
     const r = ngAnnotate(sourceCode.toString(), {
       add: true,
-      single_quotes: true
+      single_quotes: false
     });
     await writeFile(path, r.src);
   }));
