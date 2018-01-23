@@ -21,7 +21,7 @@ describe('haste-task-ng-annotate', () => {
 
     let l = await test.run(async ({ [taskPath]: ngAnnotate }) => {
       await ngAnnotate({
-        directory: test.cwd
+        glob: test.cwd
       });
     });
     expect(test.files['src/file.js'].content).toEqual(expectedOutput);
